@@ -54,9 +54,31 @@
     </div>
 
     <!-- FILA DE IMG -->
-     <div class="my-4 text-center">
-      <img src="img/fotosIT3/ensayistas/Ensayo Seba-baja.jpg" alt="Ensayo de Sebastián Carignano" style="height: 100vh; width: auto; max-width: 100%;">
+    
+    <div class="my-4 text-center">
+  <img src="img/fotosIT3/ensayistas/Ensayo Seba-baja.jpg" 
+       alt="Ensayo de Sebastián Carignano" 
+       style="height: 100vh; width: auto; max-width: 100%; cursor: pointer;"
+       data-bs-toggle="modal" data-bs-target="#modalImagenGrande">
+</div>
+
+
+<div class="modal fade" id="modalImagenGrande" tabindex="-1" aria-labelledby="modalImagenGrandeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0 position-relative">
+
+      <!-- Botón de cierre -->
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body p-0 text-center">
+        <img src="img/fotosIT3/ensayistas/Ensayo Seba-alta.jpg" 
+             alt="Imagen grande de Sebastián Carignano" 
+             style="width: 100%; height: auto;">
+      </div>
     </div>
+  </div>
+</div>
 
 
   <div id="bio" class="jumbotron d-flex p-4 align-items-center bg-verdemusgo" style="min-height: 50vh;">
