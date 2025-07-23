@@ -323,70 +323,107 @@
         </p>
       </div>
     </div>
-    <!-- TIRA DE LOGOS ALINEADOS POR LA BASE -->
+    <!-- TIRA DE LOGOS -->
 <section class="py-4">
   <div class="container">
     <div class="d-flex flex-wrap justify-content-center align-items-end gap-4 logo-row-base">
+      
       <div class="logo-container">
-        <img src="img/logos/logo-itinerarios.png" alt="Itinerarios en el tiempo" class="logo-item">
+        <img src="img/logos/Logo_Itinerarios01.png" alt="Itinerarios en el tiempo" class="logo-item logo-itinerarios">
       </div>
+      
       <div class="logo-container">
-        <img src="img/logos/Isotipo-ISEP.png" alt="ISEP" class="logo-item">
+        <img src="img/logos/Logotipo_ISEP.png" alt="ISEP" class="logo-item logo-isep">
       </div>
+      
       <div class="logo-container">
-        <img src="img/logos/Logo-secretaria.png" alt="Secretaría de Innovación" class="logo-item">
+        <img src="img/logos/Secretaria_Innovación01.png" alt="Secretaría de Innovación" class="logo-item logo-secretaria">
       </div>
+      
       <div class="logo-container">
-        <img src="img/logos/logo-ministerio.png" alt="Ministerio de Educación" class="logo-item">
+        <img src="img/logos/MinisterioEdu01.png" alt="Ministerio de Educación" class="logo-item logo-ministerio">
       </div>
+      
       <div class="logo-container">
-        <img src="img/logos/logo-gobierno.png" alt="Gobierno de Córdoba" class="logo-item">
+        <img src="img/logos/GobCba01.png" alt="Gobierno de Córdoba" class="logo-item logo-gobierno">
       </div>
+
     </div>
   </div>
 
-  <!-- ESTILOS embebidos -->
   <style>
     .logo-row-base {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: baseline; /* Clave para alinear por la base */
-      gap: 2rem;
+      align-items: end;
+      gap: 2.5rem;
     }
 
     .logo-container {
       display: flex;
-      align-items: end; /* Alineación dentro del contenedor */
-      height: 200px;     /* Altura base común */
+      align-items: flex-end;
+      height: 150px;
     }
 
     .logo-item {
-      max-height: 100%;  /* Aprovecha todo el alto disponible */
       object-fit: contain;
-      max-width: 180px;
       width: auto;
+      max-height: 100%;
     }
 
-    @media (max-width: 992px) {
-      .logo-container {
-        height: 150px;
-      }
+    /* Ajustes individuales según proporciones reales */
+    .logo-itinerarios {
+      max-height: 120px;
+      margin-top: 30px;
     }
 
+    .logo-isep {
+      max-height: 110px;
+      margin-top: 40px;
+    }
+
+    .logo-secretaria {
+      max-height: 115px;
+      margin-top: 35px;
+    }
+
+    .logo-ministerio {
+      max-height: 120px;
+      margin-top: 30px;
+    }
+
+    .logo-gobierno {
+      max-height: 130px;
+      margin-top: 20px;
+    }
+
+    /* Responsivo */
     @media (max-width: 768px) {
       .logo-container {
-        height: 120px;
+        height: 100px;
+      }
+
+      .logo-item {
+        max-width: 90px;
       }
     }
 
     @media (max-width: 576px) {
+      .logo-row-base {
+        gap: 1.5rem;
+      }
+
       .logo-container {
-        height: 100px;
+        height: 80px;
       }
     }
   </style>
 </section>
+
+
+
+
 
 
 
